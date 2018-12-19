@@ -4,27 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/images"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/anmeldungButton"
         android:layout_width="136dp"
         android:layout_height="57dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="124dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="184dp"
         android:background="@android:color/holo_green_light"
         android:text="Anmeldung"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwortFeld" />
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/benutzernamenFeld"
-        android:layout_width="242dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,42 +39,45 @@
 
     <EditText
         android:id="@+id/passwortFeld"
-        android:layout_width="246dp"
+        android:layout_width="242dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="80dp"
         android:ems="10"
         android:inputType="text|textPassword"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/benutzernamenFeld" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:text="Username"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/benutzernamenFeld"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="107dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="160dp"
         android:text="Passwort"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/passwortFeld"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="88dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="68dp"
+        android:text="Username"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
